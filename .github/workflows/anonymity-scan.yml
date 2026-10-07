@@ -1,0 +1,19 @@
+name: anonymity-scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run anonymity scan
+        env:
+          # Repository secret. The value is the deny-list and is never public.
+          ANON_DENYLIST: ${{ secrets.ANON_DENYLIST }}
+        run: scripts/anonymity-scan.sh

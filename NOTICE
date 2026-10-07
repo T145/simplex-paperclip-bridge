@@ -1,0 +1,32 @@
+simplex-paperclip-bridge
+Copyright (C) 2026 simplex-paperclip-bridge contributors
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
+
+-------------------------------------------------------------------------------
+
+NOTICE: third party components
+
+This project interoperates with SimpleX Chat, which is licensed under the GNU
+Affero General Public License, version 3.
+
+- SimpleX Chat: https://github.com/simplex-chat/simplex-chat
+- License: GNU Affero General Public License, version 3
+
+If any SimpleX Chat source is copied or forked into this repository, it remains
+under the GNU Affero General Public License, version 3, and the original
+copyright and license notices must be preserved.
+
+The `simplex-chat` core is normally run as a separate, unmodified process and is
+reached over its local WebSocket API. In that deployment the core is a separate
+program, not a component of this repository.
