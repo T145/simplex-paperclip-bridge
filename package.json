@@ -1,0 +1,34 @@
+{
+  "name": "simplex-paperclip-bridge",
+  "version": "0.1.0",
+  "description": "A self hosted bridge between a SimpleX Chat core and a Paperclip control plane.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "simplex-paperclip-bridge": "src/index.js"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "test:integration": "node --test test/integration.test.js",
+    "scan": "scripts/anonymity-scan.sh",
+    "local-run": "node scripts/local-run.js"
+  },
+  "keywords": [
+    "simplex",
+    "paperclip",
+    "bridge",
+    "chat"
+  ]
+}
